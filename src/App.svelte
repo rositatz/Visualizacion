@@ -46,6 +46,29 @@
     return escalaReproducciones(numero);
   }
 </script>
+<section class="explicacion-reproductor">
+  <h2> Reproductor de Canciones: Visualizar la Música</h2>
+    <p>
+      Cada canción se transforma en un círculo que late con su propia energía, mostrando su popularidad y estilo en un universo visual que invita a descubrir música con solo mirar.
+    </p>
+    
+  <p>
+    <strong>El tamaño</strong> del círculo representa su popularidad: cuantas más reproducciones tiene una canción, más grande se vuelve, ocupando su lugar en el escenario visual.
+  </p>
+  <p>
+    <strong>El color</strong> refleja el género musical, pintando la visualización con una paleta tan diversa como la música misma.
+  </p>
+  <p>
+    Si una canción llegó al <strong>Billboard</strong>, su número aparece en el centro del círculo, como un pequeño trofeo de prestigio.
+  </p>
+  <p>
+    Cada selector tiene su símbolo: <strong>Vari</strong> es un triángulo, como el clásico botón de play <strong>Steffy</strong> un corazón, porque siente cada canción y <strong>Rosita</strong> una estrella porque brilla con su gusto musical, porque cada quien elige con su estilo.
+  </p>
+  <p>
+    Finalmente, la <strong>danceability</strong> se traduce en la forma y movimiento, como si cada reproductor tuviera su propio pulso, latiendo al ritmo de su melodía.
+  </p>
+</section>
+
 
 <body>
 {#each decadas as decada}
@@ -123,9 +146,16 @@
 </body>
 
 <style>
-  body {
-    background-color: black;
-  }
+body {
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(-45deg, #0d1b2a, #1b263b, #0f3460, #1b1b2f);
+  background-size: 300% 300%;
+  animation: fondoEstelar 30s ease infinite;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 
   .fila-con-decada {
     display: flex;
@@ -211,4 +241,58 @@
     font-size: 12px;
     color: #aaa;
   }
+
+  @keyframes fondoEstelar {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
+.cancion {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cancion:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+  z-index: 10;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+
+.explicacion-reproductor {
+  background: linear-gradient(to right, #091021, #0f1a2b);
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 20px;
+  width: 85%;
+  color: #e0f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 174, 255, 0.2);
+}
+
+.explicacion-reproductor h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #a3d5ff;
+  text-shadow: 0 0 5px #0055ff;
+}
+
+.explicacion-reproductor p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
 </style>
