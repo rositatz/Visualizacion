@@ -1,1 +1,173 @@
-/* Estilos globales */
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(-45deg, #0f3460, #0f3460, #0f3460, #0f3460);
+    background-size: 300% 300%;
+    animation: fondoEstelar 30s ease infinite;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  
+  
+  .fila-con-decada {
+    display: flex;
+    align-items: center;  /* Change from flex-start to center */
+    margin-bottom: 40px;
+  }
+  
+  .decada-label {
+    font-weight: bold;
+    font-size: 24px;
+    width: 70px;
+    margin-right: 20px;
+    color: white;
+    display: flex;           /* Added */
+    justify-content: center; /* Added - center horizontally */
+    align-items: center;     /* Added - center vertically */
+    user-select: none;       /* optional, to prevent text selection */
+  }
+  
+    .grid-canciones {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 20px 30px;
+    }
+  
+    .cancion-wrapper {
+      text-align: center;
+    }
+  
+    .cancion {
+      position: relative;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+  
+    .circulo-blanco {
+      background-color: white;
+      border-radius: 50%;
+    }
+  
+    .billboard {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      pointer-events: none;
+    }
+  
+    .iconos {
+    position: absolute;
+    bottom: 15%; 
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  
+      .selector {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .selector-derecho {
+      right: 7%;
+    }
+  
+    .selector-izquierdo {
+      left: 7%;
+    }
+  
+    .nombre-cancion {
+      margin-top: 8px;
+      font-size: 14px;
+      color: white;
+    }
+  
+    .nombre-artista {
+      font-size: 12px;
+      color: #aaa;
+    }
+  
+    @keyframes fondoEstelar {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  
+  .cancion {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cancion:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+    z-index: 10;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  
+  
+  .explicacion-reproductor {
+    background: linear-gradient(to right, #091021, #0f1a2b);
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 20px;
+    width: 85%;
+    color: #e0f7fa;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.2);
+  }
+  
+  .explicacion-reproductor h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #a3d5ff;
+    text-shadow: 0 0 5px #0055ff;
+  }
+  
+  .explicacion-reproductor p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .grid-canciones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 15px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .cancion-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1; /* cuadrado */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+  
