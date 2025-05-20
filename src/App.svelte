@@ -75,18 +75,15 @@
 
 <body>
   {#each decadas as decada}
-  <CancionesPorDecada
-    {decada}
-    canciones={cancionesPorDecada[decada]}
-    {colorGenero}
-    {obtenerDiametro}
-    {iconosPlayPause}
-    {simboloSelector}
-  />
-{/each}
+    <CancionesPorDecada
+      {decada}
+      canciones={cancionesPorDecada[decada]}
+      {colorGenero}
+      {obtenerDiametro}
+      {iconosPlayPause}
+      {simboloSelector}
+    />
+  {/each}
 
 </body>
 
-<style>
-
-</style>
