@@ -84,9 +84,8 @@
       {simboloSelector}
     />
   {/each}
- </body>
- 
- <style>
-  /* Your existing styles here */
- </style>
- 
+
+
+</body>
+
+
