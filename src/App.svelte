@@ -61,7 +61,7 @@
   <br>
   <br>
 <h3>
-  "Un cosmos musical en círculos vibrantes: donde el pulso, el color y la forma narran la historia única de cada canción."
+  Un cosmos musical donde cada círculo cuenta su historia.
 </h3>
 </div>
 <body>
