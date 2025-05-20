@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 20px;
-  background: linear-gradient(-45deg, #0f3460, #0f3460, #0f3460, #0f3460);
+  background: linear-gradient(-45deg, #9469E4, #3F2AA0, #010030);
   background-size: 300% 300%;
   animation: fondoEstelar 30s ease infinite;
   color: white;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 .fila-con-decada {
@@ -41,7 +42,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 .cancion:hover {
@@ -73,7 +73,6 @@ body {
   bottom: 15%; 
   left: 50%;
   transform: translate(-50%, 50%);
-  color: white;
   text-align: center;
   pointer-events: none;
 }
@@ -124,16 +123,21 @@ body {
   margin: 40px auto;
   border-radius: 0px;
   width: 85%;
-  color: #e0f7fa;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 .explicacion-reproductor h2 {
-  font-size: 24px;
   margin-bottom: 15px;
+  font-weight:bold;
   color: #a3d5ff;
+  text-align: center;
 }
 
+.explicacion-reproductor h3 {
+  margin-bottom: 15px;
+  font-weight:bold;
+  color: #a3d5ff;
+  text-decoration: underline;
+}
 .explicacion-reproductor p {
   font-size: 16px;
   line-height: 1.6;

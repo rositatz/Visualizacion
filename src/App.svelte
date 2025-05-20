@@ -47,33 +47,24 @@
     return escalaReproducciones(numero);
   }
  </script>
- 
- <section class="explicacion-reproductor">
-  <h2>Reproductor de Canciones: Visualizar la Música</h2>
+ <head>
+  <!-- Importa la fuente Raleway desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+</head>
+
+ <div class="explicacion-reproductor">
+  <h2>Cuando el ritmo se vuelve interfaz</h2>
   <p>
-    Cada canción se transforma en un círculo que late con su propia energía, mostrando su popularidad y estilo en un universo visual que invita a descubrir música con solo mirar.
+    Un recorrido visual por las décadas musicales, donde cada canción se transforma en diseño, y cada reproductor refleja nuestra forma de escuchar, elegir... y sentir la música.
+    Desde los vinilos que giraban con un susurro nostálgico, pasando por los casetes que se enrollaban como recuerdos atrapados, hasta los reproductores digitales que hoy habitan en la palma de nuestra mano, la música ha sido siempre más que sonido: es experiencia, memoria y evolución. Este viaje no solo muestra la estética de cada época, sino también cómo la tecnología ha moldeado nuestra conexión con las melodías que nos acompañan. Prepárate para descubrir cómo el ritmo se vuelve interfaz y la música, un paisaje para explorar con todos los sentidos.   
   </p>
-  <p>
-    <strong>El tamaño</strong> del círculo representa su popularidad: cuantas más reproducciones tiene una canción, más grande se vuelve, ocupando su lugar en el escenario visual.
-  </p>
-  <p>
-    <strong>El color</strong> refleja el género musical, pintando la visualización con una paleta tan diversa como la música misma.
-  </p>
-  <p>
-    Si una canción llegó al <strong>Billboard</strong>, su número aparece en el centro del círculo, como un pequeño trofeo de prestigio.
-  </p>
-  <p>
-    Cada selector tiene su símbolo: <strong>Var</strong> es un triángulo, como el clásico botón de play <strong>Steffy</strong> un corazón, porque siente cada canción y <strong>Rosita</strong> una estrella porque brilla con su gusto musical, porque cada quien elige con su estilo.
-  </p>
-  <p>
-    Finalmente, la <strong>danceability</strong> se traduce en la forma y movimiento, como si cada reproductor tuviera su propio pulso, latiendo al ritmo de su melodía.
-  </p>
-  <p>
-    En el centro de cada canción, <strong>una onda estática</strong> muestra el ritmo de la música, adoptando el color de su género musical. La amplitud de la onda refleja la danceability de la canción: cuanto más bailable, más pronunciada será la onda.
-  </p>
- </section>
- 
- <body>
+  <br>
+  <br>
+<h3>
+  "Un cosmos musical en círculos vibrantes: donde el pulso, el color y la forma narran la historia única de cada canción."
+</h3>
+</div>
+<body>
   {#each decadas as decada}
     <CancionesPorDecada
       {decada}
@@ -86,6 +77,24 @@
   {/each}
 
 
+  <p>
+    Cada canción se transforma en un círculo que late con su propia energía, mostrando su popularidad y estilo en un universo visual que invita a descubrir música con solo mirar.
+
+  <br>
+  <strong>El tamaño</strong> del círculo representa su popularidad: cuantas más reproducciones tiene una canción, más grande se vuelve, ocupando su lugar en el escenario visual.
+  <br>
+  <strong>El color</strong> refleja el género musical, pintando la visualización con una paleta tan diversa como la música misma.
+  <br>
+  Si una canción llegó al <strong>Billboard</strong>, su número aparece en el centro del círculo, como un pequeño trofeo de prestigio.
+  <br>
+  Cada selector tiene su símbolo: <strong>Var</strong> es un triángulo, como el clásico botón de play <strong>Steffy</strong> un corazón, porque siente cada canción y <strong>Rosita</strong> una estrella porque brilla con su gusto musical, porque cada quien elige con su estilo.
+  <br>
+  Finalmente, la <strong>danceability</strong> se traduce en la forma y movimiento, como si cada reproductor tuviera su propio pulso, latiendo al ritmo de su melodía.
+  <br>
+  En el centro de cada canción, <strong>una onda estática</strong> muestra el ritmo de la música, adoptando el color de su género musical. La amplitud de la onda refleja la danceability de la canción: cuanto más bailable, más pronunciada será la onda.
+</p>
 </body>
+
+
 
 
