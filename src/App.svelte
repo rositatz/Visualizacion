@@ -32,13 +32,13 @@
     .range(["#00CC66", "#CC0000", "#CC0066", "#001BCC", "#CCB400", "#000000"]);
   
   const simboloSelector = {
-    "Vari": "/images/Vari.png",
+    "Var": "/images/Var.png",
     "Rosita": "/images/Rosita.png",
     "Steffy": "/images/Steffy.png"
   };
   
   const iconosPlayPause = {
-    play: "/images/Vari.png",
+    play: "/images/Var.png",
     pause: "/images/Pause.png"
   };
   
@@ -124,7 +124,7 @@
     <div class="titulo-codificacion">Quién eligió la canción</div>
     <div style="display: flex; gap: 25px; margin-bottom: 10px;">
         <div style="text-align: center;">
-          <img src="/images/Vari.png" alt ="Vari" style="height: 25px;" /><br>Var
+          <img src="/images/Var.png" alt ="Var" style="height: 25px;" /><br>Var
         </div>
         <div style="text-align: center;">
           <img src="/images/Steffy.png" alt ="Steffy" style="height: 25px;" /><br>Steffy
