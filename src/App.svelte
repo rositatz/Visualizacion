@@ -124,7 +124,7 @@
     <div class="titulo-codificacion">Quién eligió la canción</div>
     <div style="display: flex; gap: 25px; margin-bottom: 10px;">
         <div style="text-align: center;">
-          <img src="/images/Vari.png" alt ="Vari" style="height: 25px;" /><br>Vari
+          <img src="/images/Vari.png" alt ="Vari" style="height: 25px;" /><br>Var
         </div>
         <div style="text-align: center;">
           <img src="/images/Steffy.png" alt ="Steffy" style="height: 25px;" /><br>Steffy
