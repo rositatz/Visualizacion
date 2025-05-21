@@ -53,66 +53,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
 </head>
 
-<style>
-  .generos-circulos {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-
-  .genero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-  }
-
-  .circulo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-bottom: 8px;
-  }
-</style>
 
 <div class="explicacion-reproductor">
   <h2>Cuando el ritmo se vuelve interfaz</h2>
   <p>
-    Un recorrido visual por las décadas musicales, donde cada canción se transforma en diseño, y cada reproductor refleja nuestra forma de escuchar, elegir... y sentir la música.
-    Desde los vinilos que giraban con un susurro nostálgico, pasando por los casetes que se enrollaban como recuerdos atrapados, hasta los reproductores digitales que hoy habitan en la palma de nuestra mano, la música ha sido siempre más que sonido: es experiencia, memoria y evolución. Este viaje no solo muestra la estética de cada época, sino también cómo la tecnología ha moldeado nuestra conexión con las melodías que nos acompañan. Prepárate para descubrir cómo el ritmo se vuelve interfaz y la música, un paisaje para explorar con todos los sentidos.   
+    Este recorrido muestra cómo la música y la tecnología han transformado nuestra forma de escuchar desde los años 80 hasta 2020. 
+    A través de canciones representativas de cada década, se analizan datos como la cantidad de reproducciones, su posición en el 
+    Billboard Top 100, el género y el nivel de danceability. Además, se observa cómo los formatos han cambiado, pasando de vinilos 
+    y casetes a reproductores digitales y plataformas de streaming, reflejando la evolución en la forma en que elegimos y disfrutamos la música.
+    Así, cada época no solo define un sonido, sino también la manera en que la música se convierte en parte de nuestra vida y memoria.
   </p>
   <br>
   <br>
-  <h3>Un cosmos musical donde cada círculo cuenta su historia.</h3>
+  <h3>Canciones que marcaron épocas</h3>
 </div>
 
 <body>
-  {#each decadas as decada}
-    <CancionesPorDecada
-      {decada}
-      canciones={cancionesPorDecada[decada]}
-      {colorGenero}
-      {obtenerDiametro}
-      {iconosPlayPause}
-      {simboloSelector}
-    />
-  {/each}
-
-  <p>
-    Cada canción se transforma en un círculo que late con su propia energía, mostrando su popularidad y estilo en un universo visual que invita a descubrir música con solo mirar.
-
-    <br>
-    <strong>El tamaño</strong> del círculo representa su popularidad: cuantas más reproducciones tiene una canción, más grande se vuelve, ocupando su lugar en el escenario visual.
-    <br>
-    <strong>El color</strong> refleja el género musical, pintando la visualización con una paleta tan diversa como la música misma.
-  </p>
 
   <!-- Círculos de colores de los géneros -->
-  <div class="generos-circulos">
+<div class="fila-codificacion fila-superior">
+  <div class="codificacion-wrapper">
+    <h3 class="titulo-codificacion">Género</h3>
+    <div class="generos-circulos">
     <div class="genero">
       <div class="circulo" style="background-color: #00CC66;"></div>
       <span>Pop</span>
@@ -138,6 +100,79 @@
       <span >Rap</span>
     </div>
   </div>
+  </div>
+  </div>
+
+  <div class="fila-codificacion">
+  <div class="codificacion-wrapper">
+    <h3 class="titulo-codificacion">Popularidad</h3>
+    <div class="popularidad-circulos">
+      <div class="circulo pequeno"></div>
+      <div class="circulo mediano"></div>
+      <div class="circulo grande"></div>
+    </div>
+  </div>
+
+  <div class="codificacion-wrapper billboard-wrapper">
+    <h3 class="titulo-codificacion">Ranking Billboard</h3>
+    <div class="billboard-numero">77</div>
+  </div>
+  </div>
+
+<div class="fila-codificacion">
+  <div class="item-codificacion">
+    <div class="titulo-codificacion">Quién eligió la canción</div>
+    <div style="display: flex; gap: 25px; margin-bottom: 10px;">
+        <div style="text-align: center;">
+          <img src="src/Vari.png" alt ="Vari" style="height: 25px;" /><br>Vari
+        </div>
+        <div style="text-align: center;">
+          <img src="src/Steffy.png" alt ="Steffy" style="height: 25px;" /><br>Steffy
+        </div>
+        <div style="text-align: center;">
+          <img src="src/Rosita.png" alt ="Rosita" style="height: 25px;" /><br>Rosita
+        </div>
+      </div>
+  </div>
+
+  <div class="item-codificacion">
+    <div class="titulo-codificacion">Danceability</div>
+    <div class="ondas-danceability">
+      <svg viewBox="0 0 100 40" class="onda onda-baja">
+        <path d="M 0 20 C 10 10, 20 30, 30 20 C 40 10, 50 30, 60 20 C 70 10, 80 30, 90 20, 100 20" />
+      </svg>
+
+      <svg viewBox="0 0 100 40" class="onda onda-media">
+        <path d="M 0 20 C 10 0, 20 40, 30 20 C 40 0, 50 40, 60 20 C 70 0, 80 40, 90 20, 100 20" />
+      </svg>
+
+      <svg viewBox="0 0 100 40" class="onda onda-alta">
+        <path d="M 0 20 C 10 -10, 20 50, 30 20 C 40 -10, 50 50, 60 20 C 70 -10, 80 50, 90 20, 100 20" />
+      </svg>
+    </div>
+</div>
+
+
+  {#each decadas as decada}
+    <CancionesPorDecada
+      {decada}
+      canciones={cancionesPorDecada[decada]}
+      {colorGenero}
+      {obtenerDiametro}
+      {iconosPlayPause}
+      {simboloSelector}
+    />
+  {/each}
+
+  <p>
+    Cada canción se transforma en un círculo que late con su propia energía, mostrando su popularidad y estilo en un universo visual que invita a descubrir música con solo mirar.
+
+    <br>
+    <strong>El tamaño</strong> del círculo representa su popularidad: cuantas más reproducciones tiene una canción, más grande se vuelve, ocupando su lugar en el escenario visual.
+    <br>
+    <strong>El color</strong> refleja el género musical, pintando la visualización con una paleta tan diversa como la música misma.
+  </p>
+
 
   <p>
     Si una canción llegó al <strong>Billboard</strong>, su número aparece en el centro del círculo, como un pequeño trofeo de prestigio.
