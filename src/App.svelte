@@ -32,14 +32,14 @@
     .range(["#00CC66", "#CC0000", "#CC0066", "#001BCC", "#CCB400", "#000000"]);
   
   const simboloSelector = {
-    "Vari": "src/Vari.png",
-    "Rosita": "src/Rosita.png",
-    "Steffy": "src/Steffy.png"
+    "Vari": "/images/Vari.png",
+    "Rosita": "/images/Rosita.png",
+    "Steffy": "/images/Steffy.png"
   };
   
   const iconosPlayPause = {
-    play: "src/Vari.png",
-    pause: "src/Pause.png"
+    play: "/images/Vari.png",
+    pause: "/images/Pause.png"
   };
   
   function obtenerDiametro(reproducciones) {
@@ -124,13 +124,13 @@
     <div class="titulo-codificacion">Quién eligió la canción</div>
     <div style="display: flex; gap: 25px; margin-bottom: 10px;">
         <div style="text-align: center;">
-          <img src="src/Vari.png" alt ="Vari" style="height: 25px;" /><br>Vari
+          <img src="/images/Vari.png" alt ="Vari" style="height: 25px;" /><br>Vari
         </div>
         <div style="text-align: center;">
-          <img src="src/Steffy.png" alt ="Steffy" style="height: 25px;" /><br>Steffy
+          <img src="/images/Steffy.png" alt ="Steffy" style="height: 25px;" /><br>Steffy
         </div>
         <div style="text-align: center;">
-          <img src="src/Rosita.png" alt ="Rosita" style="height: 25px;" /><br>Rosita
+          <img src="/images/Rosita.png" alt ="Rosita" style="height: 25px;" /><br>Rosita
         </div>
       </div>
   </div>
