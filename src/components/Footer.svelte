@@ -3,7 +3,7 @@
       <p>Visualización de Datos<br />Trabajo Final</p>
     </div>
     <div class="footer-right">
-      <p>Var - Steffy - Ro</p>
+      <p>Var - Steffy - Rosita</p>
     </div>
   </footer>
 <style>
