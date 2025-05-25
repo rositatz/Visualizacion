@@ -5,6 +5,8 @@
     export let obtenerDiametro;
     export let iconosPlayPause;
     export let simboloSelector;
+     
+
     
     import { onMount } from 'svelte';
     
