@@ -124,7 +124,7 @@
     <div class="fila-codificacion">
       <div class="item-codificacion">
         <div class="titulo-codificacion">Quién eligió la canción</div>
-        <div style="display: flex; gap: 25px; margin-bottom: 10px;">
+        <div style="display: flex; justify-content: center; align-items: center;gap: 25px; margin-bottom: 10px;">
             <div style="text-align: center;">
               <img src="/images/Var.png" alt ="Var" style="height: 25px;" /><br>Var
             </div>
