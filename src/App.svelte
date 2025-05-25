@@ -7,6 +7,8 @@
   let cancionesPorDecada = {};
   let decadas = [];
   let escalaReproducciones;
+  let estadosReproduccion = {};
+
   
   d3.csv("/Datos.csv").then(data => {
     //test
@@ -28,6 +30,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
     return repA - repB; 
   });
 });
+
     const ordenPersonalizado = ["20", "10", "00", "90", "80"];
     decadas.sort((a, b) => ordenPersonalizado.indexOf(a) - ordenPersonalizado.indexOf(b));
     
@@ -62,6 +65,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
   <!-- Importa la fuente Raleway desde Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
 </head>
+
 
 
 <body>
