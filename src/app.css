@@ -20,7 +20,7 @@ body {
   font-size: 24px;
   width: 70px;
   margin-right: 20px;
-  color: black;
+  color: #003058;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +122,7 @@ body {
 
 .nombre-artista {
   font-size: 12px;
-  color: #aaa;
+  color: #7e7e7e;
 }
 
 @keyframes fondoEstelar {
@@ -180,9 +180,11 @@ p {
   justify-content: center;
   aspect-ratio: 1 / 1;
   padding: 10px;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
+  box-sizing: border-box;;
+  background-color: #edfffd;        /* really light aqua */
+  border: 2px solid #75f8ff;        /* light blue border */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
   .generos-circulos {
@@ -306,7 +308,12 @@ p {
   stroke-linecap: square;
 }
 
-.codificaciones{
-  background-color: white;
+.codificaciones {
+  background-color: #edfffd;        /* really light aqua */
+  border: 2px solid #75f8ff;        /* light blue border */
+  border-radius: 12px;              /* rounded corners */
+  padding: 20px;                    /* optional: some inner spacing */
   max-width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle blur shadow */
+  margin-bottom: 80px;
 }
