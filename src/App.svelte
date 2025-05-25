@@ -19,7 +19,15 @@
       }
       cancionesPorDecada[decada].push(c);
     });
-    
+
+// Ordenar las canciones dentro de cada década por número de reproducciones (de menor a mayor)
+Object.keys(cancionesPorDecada).forEach(decada => {
+  cancionesPorDecada[decada].sort((a, b) => {
+    const repA = +a.reproducciones.replace(/[^0-9]/g, "");
+    const repB = +b.reproducciones.replace(/[^0-9]/g, "");
+    return repA - repB; 
+  });
+});
     const ordenPersonalizado = ["20", "10", "00", "90", "80"];
     decadas.sort((a, b) => ordenPersonalizado.indexOf(a) - ordenPersonalizado.indexOf(b));
     
@@ -171,18 +179,17 @@
 
     <p>
       Cada canción se transforma en un círculo que late con su propia energía, mostrando su popularidad y estilo en un universo visual que invita a descubrir música con solo mirar.
-
       <br>
-      <strong>El tamaño</strong> del círculo representa su popularidad: cuantas más reproducciones tiene una canción, más grande se vuelve, ocupando su lugar en el escenario visual.
+      <br>
+      <strong>El tamaño</strong> del círculo representa su popularidad: cuantas más reproducciones tiene una canción, más grande se vuelve.
       <br>
       <strong>El color</strong> refleja el género musical, pintando la visualización con una paleta tan diversa como la música misma.
-    </p>
-
-
-    <p>
+      <br>
       Si una canción llegó al <strong>Billboard</strong>, su número aparece en el centro del círculo, como un pequeño trofeo de prestigio.
       <br>
-      Cada selector tiene su símbolo: <strong>Var</strong> es un triángulo, como el clásico botón de play <strong>Steffy</strong> un corazón, porque siente cada canción y <strong>Rosita</strong> una estrella porque brilla con su gusto musical, porque cada quien elige con su estilo.
+      <br>
+      Cada selector tiene su símbolo: <strong>Var</strong> es un triángulo, como el clásico botón de play, <strong>Steffy</strong> un corazón, porque siente cada canción y <strong>Rosita</strong> una estrella porque brilla con su gusto musical, porque cada quien elige con su estilo.
+      <br>
       <br>
       Finalmente, la <strong>danceability</strong> se traduce en la forma y movimiento, como si cada reproductor tuviera su propio pulso, latiendo al ritmo de su melodía.
       <br>
