@@ -174,17 +174,18 @@ p {
 }
 
 .cancion-wrapper {
+  background-color: #4db8ff;
+  border: 2px solid #3399cc;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(51, 153, 204, 0.4);
+  color: #ffffff;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   aspect-ratio: 1 / 1;
-  padding: 10px;
-  box-sizing: border-box;;
-  background-color: #edfffd;        /* really light aqua */
-  border: 2px solid #75f8ff;        /* light blue border */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
   .generos-circulos {
@@ -308,12 +309,14 @@ p {
   stroke-linecap: square;
 }
 
-.codificaciones {
-  background-color: #edfffd;        /* really light aqua */
-  border: 2px solid #75f8ff;        /* light blue border */
-  border-radius: 12px;              /* rounded corners */
-  padding: 20px;                    /* optional: some inner spacing */
+codificaciones {
+  background-color: #7dd3b2;        /* igual que .cancion-wrapper para coherencia */
+  border: 2px solid #065f46;
+  border-radius: 12px;
+  padding: 20px;
   max-width: 100%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle blur shadow */
+  box-shadow: 0 6px 20px rgba(6, 95, 70, 0.3);
   margin-bottom: 80px;
+  color: #003058;
 }
+

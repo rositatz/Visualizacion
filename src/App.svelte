@@ -59,11 +59,13 @@
   <div class="explicacion-reproductor">
     <h2>Cuando el ritmo se vuelve interfaz</h2>
     <p>
-      Este recorrido muestra cómo la música y la tecnología han transformado nuestra forma de escuchar desde los años 80 hasta 2020. 
+      Desde los éxitos virales de 2020 hasta los clásicos inolvidables de los 80, este recorrido revela cómo la música ha transformado nuestra forma de sentir, bailar y escuchar a lo largo del tiempo.
       A través de canciones representativas de cada década, se analizan datos como la cantidad de reproducciones, su posición en el 
-      Billboard Top 100, el género y el nivel de danceability. Además, se observa cómo los formatos han cambiado, pasando de vinilos 
-      y casetes a reproductores digitales y plataformas de streaming, reflejando la evolución en la forma en que elegimos y disfrutamos la música.
-      Así, cada época no solo define un sonido, sino también la manera en que la música se convierte en parte de nuestra vida y memoria.
+      Billboard Top 100, el género y el nivel de danceability. 
+      <br>
+      Este viaje musical no solo celebra el ritmo y la melodía, sino también cómo cada época dejó su huella en nuestras playlists, conectando emociones, historias y tendencias con un solo clic.
+      <br>
+      Porque la música no solo se escucha: se siente, se vive y se recuerda.
     </p>
     <br>
     <br>
