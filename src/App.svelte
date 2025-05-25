@@ -1,6 +1,7 @@
 <script>
   import * as d3 from "d3";
   import CancionesPorDecada from "./components/CancionesPorDecada.svelte";
+  import Footer from "./components/Footer.svelte";
   
   let canciones = [];
   let cancionesPorDecada = {};
@@ -185,4 +186,5 @@
       <br>
       En el centro de cada canción, <strong>una onda estática</strong> muestra el ritmo de la música, adoptando el color de su género musical. La amplitud de la onda refleja la danceability de la canción: cuanto más bailable, más pronunciada será la onda.
     </p>
+    <Footer/>
 </body>
