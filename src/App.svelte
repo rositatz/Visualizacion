@@ -72,7 +72,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
     <h2 id="titulo-musical">
       Notas Compartidas
       <br>
-      que Suenan en Nosotras
+      que Suenan en N osotras
     </h2>
     <p>
       <script>
@@ -80,7 +80,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
           const titulo = document.getElementById('titulo-musical');
           const texto = titulo.innerHTML;
     
-          const simbolos = ['❤️', '⭐', '◀▶'];
+          const simbolos = ['❤️', '⭐', '▶'];
           let contador = 0;
     
           const nuevoTexto = texto.replace(/o/gi, () => {
@@ -238,7 +238,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
       <br>
       <strong>El color</strong> refleja el género musical, pintando la visualización con una paleta tan diversa como la música misma.
       <br>
-      Si una canción llegó al <strong>Billboard</strong>, su número aparece en el centro del círculo, como un pequeño trofeo de prestigio.
+      Si una canción llegó al <strong>Billboard</strong>, su número aparece en la parte superior del círculo, como un pequeño trofeo de prestigio.
       <br>
       <br>
       Cada selector tiene su símbolo: <strong>Var</strong> es un triángulo, como el clásico botón de play, <strong>Steffy</strong> un corazón, porque siente cada canción y <strong>Rosita</strong> una estrella porque brilla con su gusto musical, porque cada quien elige con su estilo.
