@@ -9,6 +9,7 @@ body {
 
 }
 
+
 .fila-con-decada {
   display: flex;
   align-items: center;
@@ -432,5 +433,66 @@ html {
 @keyframes bounce {
   0%, 100% {transform: translateY(0);}
   50% {transform: translateY(-10px);}
+}
+.explicacion-reproductor h2 {
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 2.6em;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 1.8px;
+  background: linear-gradient(90deg, #0d2de2, #3b4eb8, #3e5ae4, #0d39d4);
+  background-size: 400% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moverGradiente 8s linear infinite, brillarTitulo 8s ease-in-out infinite alternate;
+  position: relative;
+  filter: drop-shadow(0 0 6px rgba(121, 134, 203, 0.6));
+}
+
+
+/* Reflejo inferior */
+.explicacion-reproductor h2::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform: scaleY(-1);
+  opacity: 0.1;
+  background: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gradiente en movimiento */
+@keyframes moverGradiente {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Brillito sutil */
+@keyframes brillarTitulo {
+  0%, 100% {
+    text-shadow: 0 0 6px rgba(121, 134, 203, 0.8);
+    opacity: 0.85;
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(179, 157, 219, 1);
+    opacity: 1;
+  }
+}
+
+/* Hover arcoíris canchero */
+.explicacion-reproductor h2:hover {
+  background: linear-gradient(45deg, #ff4081, #7c4dff, #40c4ff, #69f0ae, #ffeb3b);
+  background-size: 600% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moverGradiente 4s linear infinite;
 }
 

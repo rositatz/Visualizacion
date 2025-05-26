@@ -67,11 +67,33 @@ Object.keys(cancionesPorDecada).forEach(decada => {
 </head>
 
 
-
 <body>
   <div class="explicacion-reproductor">
-    <h2>Cuando el ritmo se vuelve interfaz</h2>
+    <h2 id="titulo-musical">
+      Notas Compartidas
+      <br>
+      que Suenan en Nosotras
+    </h2>
     <p>
+      <script>
+        function reemplazarOsConSimbolos() {
+          const titulo = document.getElementById('titulo-musical');
+          const texto = titulo.innerHTML;
+    
+          const simbolos = ['❤️', '⭐', 'ꕔ'];
+          let contador = 0;
+    
+          const nuevoTexto = texto.replace(/o/gi, () => {
+            const simbolo = simbolos[contador % simbolos.length];
+            contador++;
+            return `<span class="simbolo-musical">${simbolo}</span>`;
+          });
+    
+          titulo.innerHTML = nuevoTexto;
+        }
+    
+        reemplazarOsConSimbolos();
+      </script>
       Desde los éxitos virales de 2020 hasta los clásicos inolvidables de los 80, este recorrido revela cómo la música ha transformado nuestra forma de sentir, bailar y escuchar a lo largo del tiempo.
       A través de canciones representativas de cada década, se analizan datos como la cantidad de reproducciones, su posición en el 
       Billboard Top 100, el género y el nivel de danceability. 
@@ -82,7 +104,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
     </p>
     <br>
     <br>
-    <h3>Canciones que marcaron épocas</h3>
+    <h3>Modo Reproducir: Nosotras</h3>
   </div>
 
 
