@@ -96,9 +96,9 @@ Object.keys(cancionesPorDecada).forEach(decada => {
       </script>
       Desde los éxitos virales de 2020 hasta los clásicos inolvidables de los 80, este recorrido revela cómo la música ha transformado nuestra forma de sentir, bailar y escuchar a lo largo del tiempo.
       A través de canciones representativas de cada década, se analizan datos como la cantidad de reproducciones, su posición en el 
-      Billboard Top 100, el género y el nivel de danceability. 
+      Billboard Top 100, el género musical y el nivel de danceability. 
       <br>
-      Este viaje musical no solo celebra el ritmo y la melodía, sino también cómo cada época dejó su huella en nuestras playlists, conectando emociones, historias y tendencias con un solo clic.
+      Este viaje musical no solo celebra el ritmo y la melodía, sino también cómo cada época dejó su huella en nuestras playlists, conectando emociones, historias y tendencias con un solo click.
       <br>
       Porque la música no solo se escucha: se siente, se vive y se recuerda.
     </p>
@@ -106,8 +106,32 @@ Object.keys(cancionesPorDecada).forEach(decada => {
     <br>
     <h3 class="titulo-reproducir">Modo Reproducir Nosotras</h3>
   </div>
-
-
+  
+  <script>
+  <div class="notas-fondo">
+    
+      function generarNotasMusicales(cantidad) {
+        const contenedor = document.createElement('div');
+        contenedor.className = 'notas-fondo';
+        document.body.appendChild(contenedor);
+    
+        const simbolos = ['♪', '♫', '♬', '♩'];
+    
+        for (let i = 0; i < cantidad; i++) {
+          const nota = document.createElement('span');
+          nota.innerText = simbolos[Math.floor(Math.random() * simbolos.length)];
+          nota.style.left = `${Math.random() * 100}%`;
+          nota.style.animationDelay = `${Math.random() * 10}s`;
+          nota.style.fontSize = `${1.5 + Math.random() * 2.5}em`;
+    
+          contenedor.appendChild(nota);
+        }
+      }
+    
+      generarNotasMusicales(30); // podés subir este número para más notas
+    </script>
+    
+  
   <div class="codificaciones">
     <!-- Círculos de colores de los géneros -->
     <div class="fila-codificacion fila-superior">

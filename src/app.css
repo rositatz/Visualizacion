@@ -523,3 +523,87 @@ html {
     text-shadow: 0 0 6px rgb(79, 208, 137);
     opacity: 1;
   }
+}
+  .notas-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* se queda al fondo */
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .notas-fondo span {
+    position: absolute;
+    font-size: 15.0em;
+    color: #1e39e7; /* celestito aesthetic */
+    opacity: 0.8;
+    animation: flotarNota 10s linear infinite;
+    user-select: none;
+  }
+  
+  .notas-fondo span:nth-child(1) {
+    left: 5%;
+    animation-delay: 0s;
+    font-size: 1.3em;
+  }
+  .notas-fondo span:nth-child(2) {
+    left: 20%;
+    animation-delay: 3s;
+    font-size: 1.8em;
+  }
+  .notas-fondo span:nth-child(3) {
+    left: 35%;
+    animation-delay: 5s;
+    font-size: 1.4em;
+  }
+  .notas-fondo span:nth-child(4) {
+    left: 50%;
+    animation-delay: 1s;
+    font-size: 1.6em;
+  }
+  .notas-fondo span:nth-child(5) {
+    left: 65%;
+    animation-delay: 4s;
+    font-size: 1.9em;
+  }
+  .notas-fondo span:nth-child(6) {
+    left: 75%;
+    animation-delay: 2s;
+    font-size: 1.3em;
+  }
+  .notas-fondo span:nth-child(7) {
+    left: 85%;
+    animation-delay: 6s;
+    font-size: 1.5em;
+  }
+  .notas-fondo span:nth-child(8) {
+    left: 95%;
+    animation-delay: 7s;
+    font-size: 1.7em;
+  }
+  
+  @keyframes flotarNota {
+    0% {
+      bottom: -10%;
+      transform: translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+    30% {
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateX(-10px) rotate(10deg);
+    }
+    70% {
+      transform: translateX(10px) rotate(-10deg);
+    }
+    100% {
+      bottom: 110%;
+      transform: translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+  }
+  
