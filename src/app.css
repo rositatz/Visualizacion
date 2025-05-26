@@ -179,7 +179,7 @@ p {
 
 
 .cancion-wrapper {
-  background-color: #4db8ff;
+  background-color: #ffffff;
   border: 2px solid #3399cc;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(51, 153, 204, 0.4);
@@ -314,8 +314,8 @@ p {
 }
 
 .codificaciones {
-  background-color: #adecd3;        /* igual que .cancion-wrapper para coherencia */
-  border: 2px solid #28d2a4;
+  background-color: #ffffff;    
+  border: 2px solid #0e352a;
   border-radius: 12px;
   padding: 20px;
   max-width: 100%;
@@ -357,7 +357,7 @@ html {
 }
 
 .cancion:focus {
-  outline: 3px solid #15FB88;
+  outline: 3px solid #5e37e1;
   outline-offset: 4px;
 }
 
@@ -422,7 +422,7 @@ html {
   border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 5px 10px rgba(21, 251, 136, 0.5);
+  box-shadow: 0 5px 10px rgba(21, 36, 251, 0.5);
   transition: transform 0.3s ease;
 }
 
