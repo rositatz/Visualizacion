@@ -80,7 +80,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
           const titulo = document.getElementById('titulo-musical');
           const texto = titulo.innerHTML;
     
-          const simbolos = ['❤️', '⭐', 'ꕔ'];
+          const simbolos = ['❤️', '⭐', '◀▶'];
           let contador = 0;
     
           const nuevoTexto = texto.replace(/o/gi, () => {

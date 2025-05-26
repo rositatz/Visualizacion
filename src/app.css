@@ -488,11 +488,11 @@ html {
 
 /* Hover arcoíris canchero */
 .explicacion-reproductor h2:hover {
-  background: linear-gradient(45deg, #ff4081, #7c4dff, #40c4ff, #69f0ae, #ffeb3b);
+  background: linear-gradient(45deg, #ff1c68, #4311cc, #40c4ff, #12be6b, #c3b005);
   background-size: 600% auto;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: moverGradiente 4s linear infinite;
+  animation: moverGradiente 15s linear infinite;
 }
 
