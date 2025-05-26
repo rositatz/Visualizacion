@@ -44,8 +44,8 @@
 
       // Frequency based on danceability
       const minFrequency = 0.0;  // Super low for low-danceability songs
-    const maxFrequency = 0.65;   // Higher than before for high-danceability songs
-        const frequency = minFrequency + (maxFrequency - minFrequency) * (danceability / 100);
+      const maxFrequency = 0.65;   // Higher than before for high-danceability songs
+      const frequency = minFrequency + (maxFrequency - minFrequency) * (danceability / 100);
 
       const baseY = parseInt(svg.getAttribute('height')) * 0.16;
       const width = parseInt(svg.getAttribute('width'));
@@ -61,10 +61,7 @@
     });
   });
 });
-
-
-
-   </script>
+</script>
    
    <div class="fila-con-decada">
      <div class="decada-label">{decada}</div>
@@ -133,7 +130,6 @@
    </div>
    
    <style>
-     /* Add these styles to your component */
      .wave-container {
        display: flex;
        align-items: center;
