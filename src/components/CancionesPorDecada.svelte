@@ -5,14 +5,46 @@
     export let obtenerDiametro;
     export let iconosPlayPause;
     export let simboloSelector;
-     
-
-    
     import { onMount } from 'svelte';
     
-    // Step 1: Update the wave position to be more visible (moved up)
-    // Step 2: Use danceability to control wave amplitude
-    
+    let audio = new Audio();
+let currentlyPlaying = null;
+
+function playCancion(nombre) {
+  const path = `/canciones/${nombre}.mp3`;
+
+  // If same song is clicked again, pause it
+  if (currentlyPlaying === nombre) {
+    audio.pause();
+    audio.currentTime = 0; // Reset to beginning
+    currentlyPlaying = null;
+    return;
+  }
+
+  // Always pause and reset current audio first
+  audio.pause();
+  audio.currentTime = 0; // Reset to beginning to fully stop
+  
+  // Set new source and play
+  audio.src = path;
+  currentlyPlaying = nombre; // Set this before play() to prevent race conditions
+  
+  // Use async/await or promise to ensure proper sequencing
+  audio.load();
+  
+  audio.play().then(() => {
+    // Play started successfully
+    console.log(`Playing: ${nombre}`);
+  }).catch((error) => {
+    console.error('Error playing audio:', error);
+    currentlyPlaying = null;
+  });
+
+  audio.onended = () => {
+    currentlyPlaying = null;
+  };
+}
+        
     onMount(() => {
   canciones.forEach(cancion => {
     const waveContainers = document.querySelectorAll(`[data-cancion="${cancion.canciones.replace(/"/g, '\\"')}"] .wave-container`);
@@ -70,13 +102,14 @@
          {@const diametro = obtenerDiametro(cancion.reproducciones) * 0.88}
          <div class="cancion-wrapper" data-cancion="{cancion.canciones}">
            <div
-             class="cancion"
-             style="
-               width: {diametro}px;
-               height: {diametro}px;
-               background-color: {colorGenero(cancion.generos)};
-               font-size: {diametro * 0.1}px;
-             "
+           class="cancion"
+           on:click={() => playCancion(cancion.canciones)}
+           style="
+             width: {diametro}px;
+             height: {diametro}px;
+             background-color: {colorGenero(cancion.generos)};
+             font-size: {diametro * 0.1}px;
+           "
            >
              <div
                class="circulo-blanco"
