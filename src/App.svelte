@@ -108,7 +108,6 @@ Object.keys(cancionesPorDecada).forEach(decada => {
     
   
   <div class="codificaciones">
-    <!-- Círculos de colores de los géneros -->
     <div class="fila-codificacion fila-superior">
       <div class="codificacion-wrapper">
         <div class="fila-codificacion">
@@ -124,7 +123,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
                 <div style="text-align: center;">
                   <img src="/images/Star.png" alt ="Rosita" style="height: 25px;" /><br>Rosita
                 </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -143,8 +142,8 @@ Object.keys(cancionesPorDecada).forEach(decada => {
             <path d="M 0 20 C 10 -10, 20 50, 30 20 C 40 -10, 50 50, 60 20 C 70 -10, 80 50, 90 20, 100 20" />
           </svg>
         </div>
+      </div>
     </div>
-  </div>
         <h3 class="titulo-codificacion">Género</h3>
         <div class="generos-circulos">
           <div class="genero">
@@ -173,21 +172,21 @@ Object.keys(cancionesPorDecada).forEach(decada => {
           </div>
         </div>
         <div class="fila-codificacion">
-      <div class="codificacion-wrapper">
-        <h3 class="titulo-codificacion">Popularidad</h3>
-        <div class="popularidad-circulos">
-          <div class="circulo pequeno"></div>
-          <div class="circulo mediano"></div>
-          <div class="circulo grande"></div>
-        </div>
-      </div>
+          <div class="codificacion-wrapper">
+            <h3 class="titulo-codificacion">Popularidad</h3>
+            <div class="popularidad-circulos">
+              <div class="circulo pequeno"></div>
+              <div class="circulo mediano"></div>
+              <div class="circulo grande"></div>
+            </div>
+          </div>
 
       <div class="codificacion-wrapper billboard-wrapper">
         <h3 class="titulo-codificacion">Ranking Billboard</h3>
         <div class="billboard-numero">77</div>
       </div>
       </div>
-      </div>
+</div>
 
       
  
