@@ -66,7 +66,6 @@ Object.keys(cancionesPorDecada).forEach(decada => {
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
 </head>
 
-
 <body>
   <div class="explicacion-reproductor">
     <h2 id="titulo-musical">
@@ -106,38 +105,46 @@ Object.keys(cancionesPorDecada).forEach(decada => {
     <br>
     <h3 class="titulo-reproducir">Modo Reproducir Nosotras</h3>
   </div>
-
-  <script>
-  <div class="notas-fondo">
-    
-      function generarNotasMusicales(cantidad) {
-        const contenedor = document.createElement('div');
-        contenedor.className = 'notas-fondo';
-        document.body.appendChild(contenedor);
-    
-        const simbolos = ['♪', '♫', '♬', '♩'];
-    
-        for (let i = 0; i < cantidad; i++) {
-          const nota = document.createElement('span');
-          nota.innerText = simbolos[Math.floor(Math.random() * simbolos.length)];
-          nota.style.left = `${Math.random() * 100}%`;
-          nota.style.animationDelay = `${Math.random() * 10}s`;
-          nota.style.fontSize = `${1.5 + Math.random() * 2.5}em`;
-    
-          contenedor.appendChild(nota);
-        }
-      }
-    
-      generarNotasMusicales(30); // podés subir este número para más notas
-      setInterval(() => generarNotasMusicales(5), 5000);
-
-    </script>
     
   
   <div class="codificaciones">
     <!-- Círculos de colores de los géneros -->
     <div class="fila-codificacion fila-superior">
       <div class="codificacion-wrapper">
+        <div class="fila-codificacion">
+          <div class="item-codificacion">
+            <div class="titulo-codificacion">Quién eligió la canción</div>
+            <div style="display: flex; justify-content: center; align-items: center;gap: 25px; margin-bottom: 10px;">
+                <div style="text-align: center;">
+                  <img src="/images/Play.png" alt ="Var" style="height: 25px;" /><br>Var
+                </div>
+                <div style="text-align: center;">
+                  <img src="/images/Heart.png" alt ="Steffy" style="height: 25px;" /><br>Steffy
+                </div>
+                <div style="text-align: center;">
+                  <img src="/images/Star.png" alt ="Rosita" style="height: 25px;" /><br>Rosita
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-codificacion">
+        <div class="titulo-codificacion">Danceability</div>
+        <div class="ondas-danceability">
+          <svg viewBox="0 0 100 40" class="onda onda-baja">
+            <path d="M 0 20 C 10 10, 20 30, 30 20 C 40 10, 50 30, 60 20 C 70 10, 80 30, 90 20, 100 20" />
+          </svg>
+
+          <svg viewBox="0 0 100 40" class="onda onda-media">
+            <path d="M 0 20 C 10 0, 20 40, 30 20 C 40 0, 50 40, 60 20 C 70 0, 80 40, 90 20, 100 20" />
+          </svg>
+
+          <svg viewBox="0 0 100 40" class="onda onda-alta">
+            <path d="M 0 20 C 10 -10, 20 50, 30 20 C 40 -10, 50 50, 60 20 C 70 -10, 80 50, 90 20, 100 20" />
+          </svg>
+        </div>
+    </div>
+  </div>
         <h3 class="titulo-codificacion">Género</h3>
         <div class="generos-circulos">
           <div class="genero">
@@ -165,10 +172,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
             <span >Rap</span>
           </div>
         </div>
-      </div>
-    </div>
-
-      <div class="fila-codificacion">
+        <div class="fila-codificacion">
       <div class="codificacion-wrapper">
         <h3 class="titulo-codificacion">Popularidad</h3>
         <div class="popularidad-circulos">
@@ -183,41 +187,10 @@ Object.keys(cancionesPorDecada).forEach(decada => {
         <div class="billboard-numero">77</div>
       </div>
       </div>
-
-    <div class="fila-codificacion">
-      <div class="item-codificacion">
-        <div class="titulo-codificacion">Quién eligió la canción</div>
-        <div style="display: flex; justify-content: center; align-items: center;gap: 25px; margin-bottom: 10px;">
-            <div style="text-align: center;">
-              <img src="/images/Play.png" alt ="Var" style="height: 25px;" /><br>Var
-            </div>
-            <div style="text-align: center;">
-              <img src="/images/Heart.png" alt ="Steffy" style="height: 25px;" /><br>Steffy
-            </div>
-            <div style="text-align: center;">
-              <img src="/images/Star.png" alt ="Rosita" style="height: 25px;" /><br>Rosita
-            </div>
-          </div>
       </div>
 
-      <div class="item-codificacion">
-        <div class="titulo-codificacion">Danceability</div>
-        <div class="ondas-danceability">
-          <svg viewBox="0 0 100 40" class="onda onda-baja">
-            <path d="M 0 20 C 10 10, 20 30, 30 20 C 40 10, 50 30, 60 20 C 70 10, 80 30, 90 20, 100 20" />
-          </svg>
-
-          <svg viewBox="0 0 100 40" class="onda onda-media">
-            <path d="M 0 20 C 10 0, 20 40, 30 20 C 40 0, 50 40, 60 20 C 70 0, 80 40, 90 20, 100 20" />
-          </svg>
-
-          <svg viewBox="0 0 100 40" class="onda onda-alta">
-            <path d="M 0 20 C 10 -10, 20 50, 30 20 C 40 -10, 50 50, 60 20 C 70 -10, 80 50, 90 20, 100 20" />
-          </svg>
-        </div>
-    </div>
-  </div>
-  </div>  
+      
+ 
 
     {#each decadas as decada}
       <CancionesPorDecada
