@@ -241,7 +241,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
       Si una canción llegó al <strong>Billboard</strong>, su número aparece en la parte superior del círculo, como un pequeño trofeo de prestigio.
       <br>
       <br>
-      Cada selector tiene su símbolo: <strong>Var</strong> es un triángulo, como el clásico botón de play, <strong>Steffy</strong> un corazón, porque siente cada canción y <strong>Rosita</strong> una estrella porque brilla con su gusto musical, porque cada quien elige con su estilo.
+      Cada selector tiene su símbolo: <strong>Var</strong> es un triángulo, como el clásico botón de play, <strong>Steffy</strong> un corazón, porque siente cada canción y <strong>Rosita</strong> una estrella porque brilla con su gusto musical, cada quien elige con su estilo.
       <br>
       <br>
       Finalmente, la <strong>danceability</strong> se traduce en la forma y movimiento, como si cada reproductor tuviera su propio pulso, latiendo al ritmo de su melodía.
