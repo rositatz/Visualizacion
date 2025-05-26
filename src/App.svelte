@@ -106,7 +106,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
     <br>
     <h3 class="titulo-reproducir">Modo Reproducir Nosotras</h3>
   </div>
-  
+
   <script>
   <div class="notas-fondo">
     
@@ -129,6 +129,8 @@ Object.keys(cancionesPorDecada).forEach(decada => {
       }
     
       generarNotasMusicales(30); // podés subir este número para más notas
+      setInterval(() => generarNotasMusicales(5), 5000);
+
     </script>
     
   
