@@ -141,13 +141,13 @@ Object.keys(cancionesPorDecada).forEach(decada => {
         <div class="titulo-codificacion">Quién eligió la canción</div>
         <div style="display: flex; justify-content: center; align-items: center;gap: 25px; margin-bottom: 10px;">
             <div style="text-align: center;">
-              <img src="/images/Var.png" alt ="Var" style="height: 25px;" /><br>Var
+              <img src="/images/Play.png" alt ="Var" style="height: 25px;" /><br>Var
             </div>
             <div style="text-align: center;">
-              <img src="/images/Steffy.png" alt ="Steffy" style="height: 25px;" /><br>Steffy
+              <img src="/images/Heart.png" alt ="Steffy" style="height: 25px;" /><br>Steffy
             </div>
             <div style="text-align: center;">
-              <img src="/images/Rosita.png" alt ="Rosita" style="height: 25px;" /><br>Rosita
+              <img src="/images/Star.png" alt ="Rosita" style="height: 25px;" /><br>Rosita
             </div>
           </div>
       </div>
