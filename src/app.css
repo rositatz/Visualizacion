@@ -496,3 +496,30 @@ html {
   animation: moverGradiente 15s linear infinite;
 }
 
+.titulo-reproducir {
+  margin-top: 10px;
+  font-size: 2.5em;
+  text-align: right center;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  background: linear-gradient(90deg, #cb0acb, hsl(304, 81%, 49%), #112cc1, #fa7d16);
+  background-size: 300% auto;
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: moverGradiente 10s linear infinite, brillarSubtitulo 7s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 3px rgba(105, 95, 181, 0.5));
+}
+
+@keyframes brillarSubtitulo {
+  0%, 100% {
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 2px rgba(202, 25, 119, 0.4);
+    opacity: 0.9;
+  }
+  50% {
+    letter-spacing: 1.8px;
+    text-shadow: 0 0 6px rgb(79, 208, 137);
+    opacity: 1;
+  }

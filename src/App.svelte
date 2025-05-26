@@ -104,7 +104,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
     </p>
     <br>
     <br>
-    <h3>Modo Reproducir: Nosotras</h3>
+    <h3 class="titulo-reproducir">Modo Reproducir Nosotras</h3>
   </div>
 
 
