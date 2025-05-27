@@ -74,6 +74,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
       que Suenan en N osotras
     </h2>
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
         function reemplazarOsConSimbolos() {
           const titulo = document.getElementById('titulo-musical');
           const texto = titulo.innerHTML;
@@ -91,7 +92,9 @@ Object.keys(cancionesPorDecada).forEach(decada => {
         }
     
         reemplazarOsConSimbolos();
-      </script>
+      });
+    </script>
+
     <p>
 
       Desde los éxitos virales de 2020 hasta los clásicos inolvidables de los 80, este recorrido revela cómo la música ha transformado nuestra forma de sentir, bailar y escuchar a lo largo del tiempo.
