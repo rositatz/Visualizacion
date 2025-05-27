@@ -1,41 +1,41 @@
-decadas,canciones,artistas,reproducciones,billboard,danceability,generos,eligio
-2020,Ojitos Lindos,Bad Bunny,"1,658,000",77,60,Reguetón,Steffy
-2020,Dejame Entrar,Rauw Alejandro,"136,000,000",94,82,Reguetón,Steffy
-2020,GIRL HELL 1999,femtanyl,"17,900,000",0,51,Electrónica,Var
-2020,Moscow Mule,Bad Bunny,"2,290,000,000",4,95,Reguetón,Steffy
-2020,HOPE,NF,"329,000,000",49,55,Rap,Var
-2020,Sunflower,Post Malone,"6,680,000,000",3,76,Pop,Steffy
-2020,Blinding Lights,The Weeknd,"7,770,000,000",1,85,Pop,Steffy
-2020,Fable,Gigi Perez,"99,500,000",55,32,Pop,Rosita
-2010,Hear Me,Imagine Dragons,"116,000,000",0,61,Rock,Var
-2010,Wake Me Up,Avicci,"2,710,000,000",34,53,Indie,Steffy
-2010,Freckled Angels,Ren,"2,790,000",0,80,Indie,Var
-2010,A Sky Full Of Stars,Coldplay,"2,990,000,000",10,55,Pop,Steffy
-2010,Take Me To Church,Hozier,"3,060,000,000",2,57,Folk,Var
-2010,Love Yourself,Justin Bieber,"5,430,000,000",1,41,Pop,Steffy
-2010,Night Changes,One Direction,"3,190,000,000",6,56%,Pop,Steffy
-2010,Mystery of Love,Sufjan Stevens,"582,000,000",63,36,Indie,Rosita
-2000,Beautiful Day,U2,"859,000,000",1,54,Rock,Steffy
-2000,Never Wanted To Dance,Mindless Self Indulgence,"70,700,000",0,57,Rock,Var
-2000,Twilight,BoA,"152,000,000",0,39,Pop,Rosita
-2000,In The End,Linkin Park,"2,590,000,000",2,56,Rock,Var
-2000,My Alcoholic Friends,The Dresden Dolls,"240,000,000",0,60,Indie,Rosita
-2000,Crime And Punishment,Sheena Ringo,"26,100,000",0,39,Rock,Rosita
-2000,One More Time,Daft Punk,"767,000,000",61,90,Electrónica,Steffy
-2000,Girl With One Eye,Florence and the machine,"88,600,000",0,43,Rock,Rosita
-1990,Enjoy The Silence,Depeche Mode,"1,580,000,000",8,63,Rock,Steffy
-1990,De Musica Ligera,Soda Stereo,"9,31,000,000",18,70%,Rock,Steffy
-1990,Iris,Goo Goo Dolls,"3,270,000,000",9,32,Rock,Rosita
-1990,Wonderwall,Oasis,"3,410,000,000",1,41,Rock,Steffy
-1990,Creep,Radiohead,"3,590,000,000",34,52,Rock,Var
-1990,My Name Is,Eminem,"982,000,000",36,87,Rap,Var
-1990,Exit Music (For a Film),Radiohead,"383,000,000",0,29,Rock,Rosita
-1990,Smells Like Teen Spirit,Nirvana,"4,650,000,000",6,50,Rock,Rosita
-1980,Where Is My Mind,Pixies,"1,400,000,000",17,52,Rock,Rosita
-1980,Im Still Standing,Elton John,"2,000,000,000",12,50,Pop,Var
-1980,Message in the Bottle,The Police,"2,600,000",74,45,Rock,Steffy
-1980,Like a Virgin,Madonna,"325,000,000",1,74,Pop,Steffy
-1980,In The Air Tonight,Phil Collins,"500,000,000",19,50,Pop,Steffy
-1980,Billie Jean,Michael Jackson,"4,070,000,000",1,93,Rock,Steffy
-1980,Under Pressure,Queen & David Bowie,"1,880,000,000",1,67,Rock,Rosita
-1980,Careless Whisper,George Michael,"1,900,000,000",1,58,Pop,Var
+decadas,canciones,artistas,reproducciones,billboard,danceability,generos,eligio,youtube
+2020,Ojitos Lindos,Bad Bunny,"360,000,000",77,60,Reguetón,Steffy,https://www.youtube.com/channel/UCmBA_wu8xGg1OfOkfW13Q0Q
+2020,Dejame Entrar,Rauw Alejandro,"136,000,000",94,82,Reguetón,Steffy,https://www.youtube.com/channel/UC_Av98lDjf5KvFib5elhpYg
+2020,GIRL HELL 1999,femtanyl,"17,900,000",0,51,Electrónica,Var,https://www.youtube.com/@Femtanyl03
+2020,Moscow Mule,Bad Bunny,"2,290,000,000",4,95,Reguetón,Steffy,https://www.youtube.com/channel/UCmBA_wu8xGg1OfOkfW13Q0Q
+2020,HOPE,NF,"329,000,000",49,55,Rap,Var,https://www.youtube.com/channel/UCoRR6OLuIZ2-5VxtnQIaN2w
+2020,Sunflower,Post Malone,"6,680,000,000",3,76,Pop,Steffy,https://www.youtube.com/channel/UCeLHszkByNZtPKcaVXOCOQQ
+2020,Blinding Lights,The Weeknd,"7,770,000,000",1,85,Pop,Steffy,https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ
+2020,Fable,Gigi Perez,"99,500,000",55,32,Pop,Rosita,https://www.youtube.com/channel/UCkbB4r0fATvUdsfdBegJPXQ
+2010,Hear Me,Imagine Dragons,"116,000,000",0,61,Rock,Var,https://www.youtube.com/channel/UCT9zcQNlyht7fRlcjmflRSA
+2010,Wake Me Up,Avicci,"2,710,000,000",34,53,Indie,Steffy,https://www.youtube.com/channel/UCPHjpfnnGklkRBBTd0k6aHg
+2010,Freckled Angels,Ren,"2,790,000",0,80,Indie,Var,https://www.youtube.com/@RenMakesMusic
+2010,A Sky Full Of Stars,Coldplay,"2,990,000,000",10,55,Pop,Steffy,https://www.youtube.com/coldplayVEVO
+2010,Take Me To Church,Hozier,"3,060,000,000",2,57,Folk,Var,https://www.youtube.com/HozierMusic
+2010,Love Yourself,Justin Bieber,"5,430,000,000",1,41,Pop,Steffy,https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ
+2010,Night Changes,One Direction,"3,190,000,000",6,56,Pop,Steffy,https://www.youtube.com/onedirectionchannel
+2010,Mystery of Love,Sufjan Stevens,"582,000,000",63,36,Indie,Rosita,https://www.youtube.com/c/SufjanStevensOfficial/channels
+2000,Beautiful Day,U2,"859,000,000",1,54,Rock,Steffy,https://www.youtube.com/channel/UC4gPNusMDwx2Xm-YI35AkCA
+2000,Never Wanted To Dance,Mindless Self Indulgence,"70,700,000",0,57,Rock,Var,https://www.youtube.com/@MSIofficial
+2000,Twilight,BoA,"152,000,000",0,39,Pop,Rosita,https://www.youtube.com/channel/UC83m_vdNzeFU6iUcsMAwe8Q)
+2000,In The End,Linkin Park,"2,590,000,000",2,56,Rock,Var,https://www.youtube.com/@LinkinPark
+2000,My Alcoholic Friends,The Dresden Dolls,"240,000,000",0,60,Indie,Rosita,https://www.youtube.com/channel/UCxzvI-C7qNsPgKQ94l2-xNg
+2000,Crime And Punishment,Sheena Ringo,"26,100,000",0,39,Rock,Rosita,https://www.youtube.com/@ringosheenaofficial
+2000,One More Time,Daft Punk,"767,000,000",61,90,Electrónica,Steffy,https://www.youtube.com/channel/UC_kRDKYrUlrbtrSiyu5Tflg
+2000,Girl With One Eye,Florence and the machine,"88,600,000",0,43,Rock,Rosita,https://www.youtube.com/channel/UC5MujsH-hrVWHBBfSSmv18A
+1990,Enjoy The Silence,Depeche Mode,"1,580,000,000",8,63,Rock,Steffy,https://www.youtube.com/channel/UCM-CWGUijAC-8idv6k6Fygw
+1990,De Musica Ligera,Soda Stereo,"9,31,000,000",18,70,Rock,Steffy,https://www.youtube.com/@SodaStereo
+1990,Iris,Goo Goo Dolls,"3,270,000,000",9,32,Rock,Rosita,https://www.youtube.com/@GooGooDolls
+1990,Wonderwall,Oasis,"3,410,000,000",1,41,Rock,Steffy,https://www.youtube.com/channel/UCUDVBtnOQi4c7E8jebpjc9Q
+1990,Creep,Radiohead,"3,590,000,000",34,52,Rock,Var,https://www.youtube.com/@Radiohead
+1990,My Name Is,Eminem,"982,000,000",36,87,Rap,Var,https://www.youtube.com/@Eminem
+1990,Exit Music (For a Film),Radiohead,"383,000,000",0,29,Rock,Rosita,https://www.youtube.com/channel/UCq19-LqvG35A-30oyAiPiqA
+1990,Smells Like Teen Spirit,Nirvana,"4,650,000,000",6,50,Rock,Rosita,https://www.youtube.com/@Nirvana
+1980,Where Is My Mind,Pixies,"1,400,000,000",17,52,Rock,Rosita,https://www.youtube.com/channel/UCEMVQmE2DNpGqdwJi7-o5LQ
+1980,Im Still Standing,Elton John,"2,000,000,000",12,50,Pop,Var,https://www.youtube.com/@EltonJohn
+1980,Message in the Bottle,The Police,"2,600,000",74,45,Rock,Steffy,https://www.youtube.com/channel/UCuCY8MR9LcAGIXetnKx5SnQ
+1980,Like a Virgin,Madonna,"325,000,000",1,74,Pop,Steffy,https://www.youtube.com/channel/UC81VD6eeuLLSfyY_D-N8sVw
+1980,In The Air Tonight,Phil Collins,"500,000,000",19,50,Pop,Steffy,https://www.youtube.com/@PhilCollins
+1980,Billie Jean ,Michael Jackson,"4,070,000,000",1,93,Rock,Steffy,https://www.youtube.com/@MichaelJackson
+1980,Under Pressure,Queen & David Bowie,"1,880,000,000",1,67,Rock,Rosita,https://www.youtube.com/@QueenOfficial
+1980,Careless Whisper,George Michael,"1,900,000,000",1,58,Pop,Var,https://www.youtube.com/@GeorgeMichael
