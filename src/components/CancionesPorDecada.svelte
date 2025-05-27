@@ -8,22 +8,28 @@
     import { onMount } from 'svelte';
     
     let audio = new Audio();
-let currentlyPlaying = null;
+    let currentlyPlaying = null;
 
+     if (!window.audioGlobal) {
+    window.audioGlobal = new Audio();
+    window.audioGlobal.currentlyPlaying = null;
+  }
 function playCancion(nombre) {
+  const audio = window.audioGlobal;
   const path = `/canciones/${nombre}.mp3`;
 
   // If same song is clicked again, pause it
-  if (currentlyPlaying === nombre) {
+  if (audio.currentlyPlaying === nombre) {
     audio.pause();
     audio.currentTime = 0; // Reset to beginning
-    currentlyPlaying = null;
+    audio.currentlyPlaying = null;
     return;
   }
 
   // Always pause and reset current audio first
-  audio.pause();
-  audio.currentTime = 0; // Reset to beginning to fully stop
+    audio.pause();
+    audio.currentTime = 0;
+  
   
   // Set new source and play
   audio.src = path;
@@ -34,14 +40,14 @@ function playCancion(nombre) {
   
   audio.play().then(() => {
     // Play started successfully
-    console.log(`Playing: ${nombre}`);
+    audio.currentlyPlaying = nombre;
   }).catch((error) => {
     console.error('Error playing audio:', error);
-    currentlyPlaying = null;
+    audio.currentlyPlaying = null;
   });
 
   audio.onended = () => {
-    currentlyPlaying = null;
+    audio.currentlyPlaying = null;
   };
 }
         
