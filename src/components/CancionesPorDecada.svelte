@@ -155,8 +155,14 @@ function playCancion(nombre) {
                style="width: {diametro * 0.12}px; height: {diametro * 0.12}px;"
              />
            </div>
+
            <div class="nombre-cancion">{cancion.canciones}</div>
-           <div class="nombre-artista">{cancion.artistas}</div>
+           <div 
+              class="nombre-artista" 
+              on:click={() => window.open(cancion.youtube, '_blank')}
+            >
+              {cancion.artistas}
+            </div>
          </div>
        {/each}
      </div>
