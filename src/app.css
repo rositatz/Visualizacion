@@ -159,6 +159,73 @@ body {
   text-align: center;
 }
 
+#play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+  border: 1.5px solid #6325df;
+  box-shadow: 0 0 10px #6325df;
+  text-shadow: 0 0 10px #6325df;
+  font-size: 0.9em;
+  margin: 0 0.1em;
+  padding: 0;
+  line-height: 1;
+  transition: all 0.3s ease; 
+}
+
+/* Efecto al pasar el mouse */
+#play:hover {
+  color: #9b5eff;
+  border-color: #9b5eff;
+  box-shadow: 0 0 12px #9b5eff;
+  text-shadow: 0 0 12px #9b5eff;
+}
+
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+  border-left: 0.5em solid #6325df;
+  border-top: 0.3em solid transparent;
+  border-bottom: 0.3em solid transparent;
+  margin-left: 0.05em;
+}
+
+#play:hover .triangle {
+  border-left-color: transparent;
+}
+
+#play:active {
+  transform: scale(0.95);
+  color: inherit; /* o color original */
+  border-color: #aaa;
+}
+
+
+/* ✨ Animación de titileo */
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 4px #6325df);
+  }
+  50% {
+    opacity: 0.6;
+    filter: drop-shadow(0 0 6px #9b5eff);
+  }
+}
+
+.explicacion-reproductor span {
+  margin: 0px -10px 0px -10px;
+
+}
+
 .explicacion-reproductor h3 {
   margin-bottom: 10px;
   font-weight: bold;
@@ -447,7 +514,7 @@ html {
   font-weight: 900;
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 3.0px;
+  letter-spacing: -0.5px;
   background: linear-gradient(90deg, #0d2de2, #3b4eb8, #3e5ae4, #0d39d4);
   background-size: 400% auto;
   background-clip: text;
@@ -508,7 +575,7 @@ html {
   font-size: 2.5em;
   text-align: right center;
   font-weight: 800;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.2px;
   background: linear-gradient(90deg, #cb0acb, hsl(304, 81%, 49%), #112cc1, #fa7d16);
   background-size: 300% auto;
   background-clip: text;
@@ -531,5 +598,6 @@ html {
     opacity: 1;
   }
 }
+
 
 
