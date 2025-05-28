@@ -103,7 +103,7 @@ function playCancion(nombre) {
    
    <div class="fila-con-decada">
      <div class="decada-label">{decada}</div>
-     <div class="grid-canciones" style="grid-template-rows: repeat({canciones.length > 4 ? 2 : 1}, 1fr);">
+     <div class="grid-canciones" style="grid-template-rows: repeat(2, 1fr);">
        {#each canciones as cancion (cancion.canciones)}
          {@const diametro = obtenerDiametro(cancion.reproducciones) * 0.88}
          <div class="cancion-wrapper" data-cancion="{cancion.canciones}">
@@ -198,5 +198,15 @@ function playCancion(nombre) {
        z-index: 2;
        overflow: hidden;
      }
+     .cancion-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;   /* Center inside the grid cell */
+}
    </style>
    
