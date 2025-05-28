@@ -88,6 +88,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
           });
     
           titulo.innerHTML = nuevoTexto;
+          titulo.setAttribute('data-text', titulo.textContent);
         }
     
         reemplazarOsConSimbolos();
