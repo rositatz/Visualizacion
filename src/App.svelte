@@ -69,9 +69,9 @@ Object.keys(cancionesPorDecada).forEach(decada => {
 <body>
   <div class="explicacion-reproductor">
     <h2 id="titulo-musical">
-      N❤️tas C⭐mpartidas
+      N❤️tas c⭐mpartidas
       <br>
-      que Suenan en N ▶s❤️tras
+      que suenan en n ▶s❤️tras
     </h2>
     <script>
         function reemplazarOsConSimbolos() {
