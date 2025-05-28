@@ -63,8 +63,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
 
 <head>
   <!-- Importa la fuente Raleway desde Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
 </head>
 
 <body>
