@@ -69,29 +69,10 @@ Object.keys(cancionesPorDecada).forEach(decada => {
 <body>
   <div class="explicacion-reproductor">
     <h2 id="titulo-musical">
-      Notas Compartidas
+      N❤️tas C⭐mpartidas
       <br>
-      que Suenan en N osotras
-    </h2>
-    <script>
-        function reemplazarOsConSimbolos() {
-          const titulo = document.getElementById('titulo-musical');
-          const texto = titulo.innerHTML;
-    
-          const simbolos = ['❤️', '⭐', '▶'];
-          let contador = 0;
-    
-          const nuevoTexto = texto.replace(/o/gi, () => {
-            const simbolo = simbolos[contador % simbolos.length];
-            contador++;
-            return `<span class="simbolo-musical">${simbolo}</span>`;
-          });
-    
-          titulo.innerHTML = nuevoTexto;
-        }
-    
-        reemplazarOsConSimbolos();
-      </script>
+      que Suenan en N ▶s❤️tras
+   
     <p>
 
       Desde los éxitos virales de 2020 hasta los clásicos inolvidables de los 80, este recorrido revela cómo la música ha transformado nuestra forma de sentir, bailar y escuchar a lo largo del tiempo.
