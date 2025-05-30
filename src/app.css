@@ -184,20 +184,17 @@ body {
   text-shadow: 0 0 12px #9b5eff;
 }
 
-
 .triangle {
-  width: 0;
-  height: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-45%, -50%);
-  border-left: 0.5em solid #6325df;
-  border-top: 0.3em solid transparent;
-  border-bottom: 0.3em solid transparent;
-  margin-left: 0.05em;
+  transform: translate(-56%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 18px solid #6325df;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
 }
-
 #play:hover .triangle {
   border-left-color: transparent;
 }
@@ -209,17 +206,7 @@ body {
 }
 
 
-/* ✨ Animación de titileo */
-@keyframes flicker {
-  0%, 100% {
-    opacity: 1;
-    filter: drop-shadow(0 0 4px #6325df);
-  }
-  50% {
-    opacity: 0.6;
-    filter: drop-shadow(0 0 6px #9b5eff);
-  }
-}
+
 
 .explicacion-reproductor span {
   margin: 0px -10px 0px -10px;
