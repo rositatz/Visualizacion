@@ -13,19 +13,20 @@
     </div>
     
     <div class="footer-right">
-      <p>Steffy - Var - Rosita</p>
-      <div class="social-links">
+      <p class="instagram-links">
         <a href="https://www.instagram.com/stefanyred/" target="_blank">
-          <i class="fab fa-instagram"></i> @stefanyred
-        </a>
+          <i class="fab fa-instagram"></i> Steffy
+        </a> -
         <a href="https://www.instagram.com/varvaramironov_/" target="_blank">
-          <i class="fab fa-instagram"></i> @varvaramironov_
-        </a>
+          <i class="fab fa-instagram"></i> Var
+        </a> -
         <a href="https://www.instagram.com/rochitagle4934/" target="_blank">
-          <i class="fab fa-instagram"></i> @rochitagle4934
+          <i class="fab fa-instagram"></i> Rosita
         </a>
-      </div>
+      </p>
     </div>
+    
+    
   </footer>
   
   <style>
@@ -52,31 +53,26 @@
     text-align: right;
   }
   
-  .social-links {
-    margin-top: 6px;
-  }
-  
-  .social-links a {
-    display: inline-block;
-    margin-left: 8px;
-    text-decoration: none;
-    color: #0d2de2;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .social-links a:first-child {
-    margin-left: 0;
-  }
-  
-  .social-links a i {
-    margin-right: 5px;
-    color: #E1306C; /* clásico rosa de Instagram */
-  }
-  
-  .social-links a:hover {
-    color: #ff1c68;
-  }
+  .instagram-links a {
+  text-decoration: none;
+  color: #0d2de2;
+  font-weight: 500;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.instagram-links a:first-child {
+  margin-left: 0;
+}
+
+.instagram-links a i {
+  color: #E1306C; /* Color clásico de Instagram */
+  margin-right: 5px;
+}
+
+.instagram-links a:hover {
+  color: #ff1c68;
+}
 
 
   .music-link {
