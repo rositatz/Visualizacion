@@ -80,9 +80,10 @@
 }
 
 .music-link a {
-  color: #1DB954;
+  color: #009d37;
   text-decoration: none;
   font-weight: 500;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
