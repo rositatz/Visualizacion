@@ -188,7 +188,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-56%, -50%);
+  transform: translate(-50%, -50%);
   width: 0;
   height: 0;
   border-left: 18px solid #6325df;
