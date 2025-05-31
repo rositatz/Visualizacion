@@ -75,9 +75,7 @@ Object.keys(cancionesPorDecada).forEach(decada => {
       <span class="icono">⭐</span>
       mpartidas
       <br>
-      que suenan en n
-      <span class="icono" id="play">▶</span>
-      s
+      que suenan en n<span class="icono" id="play">▶</span>s
       <span class="icono">❤️</span>
       tras
       <br>
