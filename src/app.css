@@ -496,13 +496,10 @@ html {
     opacity: 1;
   }
 }
-<<<<<<< HEAD
-
 
 
 ::selection {
   background-color: rgba(123, 0, 255, 0.182); /* light transparent purple */
   color: black; /* Optional: set text color when selected */
 }
-=======
->>>>>>> f1fa3c5370151f7adbc14216a4f18286662b4e6c
+
