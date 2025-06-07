@@ -13,20 +13,19 @@
     </div>
     
     <div class="footer-right">
-      <p class="instagram-links">
+      <p>Steffy - Var - Rosita</p>
+      <div class="social-links">
         <a href="https://www.instagram.com/stefanyred/" target="_blank">
-          <i class="fab fa-instagram"></i> Steffy
-        </a> -
-        <a href="https://www.instagram.com/varvaramironov_/" target="_blank">
-          <i class="fab fa-instagram"></i> Var
-        </a> -
-        <a href="https://www.instagram.com/rochitagle4934/" target="_blank">
-          <i class="fab fa-instagram"></i> Rosita
+          <i class="fab fa-instagram"></i> @stefanyred
         </a>
-      </p>
+        <a href="https://www.instagram.com/varvaramironov_/" target="_blank">
+          <i class="fab fa-instagram"></i> @varvaramironov_
+        </a>
+        <a href="https://www.instagram.com/rochitagle4934/" target="_blank">
+          <i class="fab fa-instagram"></i> @rochitagle4934
+        </a>
+      </div>
     </div>
-    
-    
   </footer>
   
   <style>
@@ -53,26 +52,31 @@
     text-align: right;
   }
   
-  .instagram-links a {
-  text-decoration: none;
-  color: #0d2de2;
-  font-weight: 500;
-  margin-left: 5px;
-  transition: color 0.3s ease;
-}
-
-.instagram-links a:first-child {
-  margin-left: 0;
-}
-
-.instagram-links a i {
-  color: #E1306C; /* Color clásico de Instagram */
-  margin-right: 5px;
-}
-
-.instagram-links a:hover {
-  color: #ff1c68;
-}
+  .social-links {
+    margin-top: 6px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-left: 8px;
+    text-decoration: none;
+    color: #0d2de2;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:first-child {
+    margin-left: 0;
+  }
+  
+  .social-links a i {
+    margin-right: 5px;
+    color: #E1306C; /* clásico rosa de Instagram */
+  }
+  
+  .social-links a:hover {
+    color: #ff1c68;
+  }
 
 
   .music-link {
@@ -80,10 +84,9 @@
 }
 
 .music-link a {
-  color: #009d37;
+  color: #1DB954;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 200;
   transition: color 0.3s ease;
 }
 
@@ -94,6 +97,7 @@
 .music-link a:hover {
   color: #17a34a;
 }
+
 
   </style>
   
