@@ -5,52 +5,14 @@
     export let obtenerDiametro;
     export let iconosPlayPause;
     export let simboloSelector;
+    
+
+    
     import { onMount } from 'svelte';
     
-    let audio = new Audio();
-    let currentlyPlaying = null;
-
-     if (!window.audioGlobal) {
-    window.audioGlobal = new Audio();
-    window.audioGlobal.currentlyPlaying = null;
-  }
-function playCancion(nombre) {
-  const audio = window.audioGlobal;
-  const path = `/canciones/${nombre}.mp3`;
-
-  // If same song is clicked again, pause it
-  if (audio.currentlyPlaying === nombre) {
-    audio.pause();
-    audio.currentTime = 0; // Reset to beginning
-    audio.currentlyPlaying = null;
-    return;
-  }
-
-  // Always pause and reset current audio first
-    audio.pause();
-    audio.currentTime = 0;
-  
-  
-  // Set new source and play
-  audio.src = path;
-  currentlyPlaying = nombre; // Set this before play() to prevent race conditions
-  
-  // Use async/await or promise to ensure proper sequencing
-  audio.load();
-  
-  audio.play().then(() => {
-    // Play started successfully
-    audio.currentlyPlaying = nombre;
-  }).catch((error) => {
-    console.error('Error playing audio:', error);
-    audio.currentlyPlaying = null;
-  });
-
-  audio.onended = () => {
-    audio.currentlyPlaying = null;
-  };
-}
-        
+    // Step 1: Update the wave position to be more visible (moved up)
+    // Step 2: Use danceability to control wave amplitude
+   
     onMount(() => {
   canciones.forEach(cancion => {
     const waveContainers = document.querySelectorAll(`[data-cancion="${cancion.canciones.replace(/"/g, '\\"')}"] .wave-container`);
@@ -82,8 +44,8 @@ function playCancion(nombre) {
 
       // Frequency based on danceability
       const minFrequency = 0.0;  // Super low for low-danceability songs
-      const maxFrequency = 0.65;   // Higher than before for high-danceability songs
-      const frequency = minFrequency + (maxFrequency - minFrequency) * (danceability / 100);
+    const maxFrequency = 0.65;   // Higher than before for high-danceability songs
+        const frequency = minFrequency + (maxFrequency - minFrequency) * (danceability / 100);
 
       const baseY = parseInt(svg.getAttribute('height')) * 0.16;
       const width = parseInt(svg.getAttribute('width'));
@@ -99,23 +61,27 @@ function playCancion(nombre) {
     });
   });
 });
+
+
+
 </script>
+
+   
    
    <div class="fila-con-decada">
      <div class="decada-label">{decada}</div>
-     <div class="grid-canciones" style="grid-template-rows: repeat(2, 1fr);">
+     <div class="grid-canciones" style="grid-template-rows: repeat({canciones.length > 4 ? 2 : 1}, 1fr);">
        {#each canciones as cancion (cancion.canciones)}
          {@const diametro = obtenerDiametro(cancion.reproducciones) * 0.88}
          <div class="cancion-wrapper" data-cancion="{cancion.canciones}">
            <div
-           class="cancion"
-           on:click={() => playCancion(cancion.canciones)}
-           style="
-             width: {diametro}px;
-             height: {diametro}px;
-             background-color: {colorGenero(cancion.generos)};
-             font-size: {diametro * 0.1}px;
-           "
+             class="cancion"
+             style="
+               width: {diametro}px;
+               height: {diametro}px;
+               background-color: {colorGenero(cancion.generos)};
+               font-size: {diametro * 0.1}px;
+             "
            >
              <div
                class="circulo-blanco"
@@ -161,20 +127,15 @@ function playCancion(nombre) {
                style="width: {diametro * 0.12}px; height: {diametro * 0.12}px;"
              />
            </div>
-
            <div class="nombre-cancion">{cancion.canciones}</div>
-           <div 
-              class="nombre-artista" 
-              on:click={() => window.open(cancion.youtube, '_blank')}
-            >
-              {cancion.artistas}
-            </div>
+           <div class="nombre-artista">{cancion.artistas}</div>
          </div>
        {/each}
      </div>
    </div>
    
    <style>
+     /* Add these styles to your component */
      .wave-container {
        display: flex;
        align-items: center;
@@ -198,15 +159,6 @@ function playCancion(nombre) {
        z-index: 2;
        overflow: hidden;
      }
-     .cancion-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;   /* Center inside the grid cell */
-}
    </style>
+   
    

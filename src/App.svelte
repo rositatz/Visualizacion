@@ -8,7 +8,8 @@
   let decadas = [];
   let escalaReproducciones;
   let estadosReproduccion = {};
-
+  let todasLasCanciones = [];
+  
   
   d3.csv("/Datos.csv").then(data => {
     //test
@@ -31,6 +32,8 @@ Object.keys(cancionesPorDecada).forEach(decada => {
   });
 });
 
+
+
     const ordenPersonalizado = ["20", "10", "00", "90", "80"];
     decadas.sort((a, b) => ordenPersonalizado.indexOf(a) - ordenPersonalizado.indexOf(b));
     
@@ -39,7 +42,8 @@ Object.keys(cancionesPorDecada).forEach(decada => {
       .domain([0, maxReproducciones])
       .range([60, 200]);
   });
-  
+
+
   const colorGenero = d3.scaleOrdinal()
     .domain(["Pop", "Rock", "Indie", "Electrónica", "Reguetón", "Rap"])
     .range(["#00CC66", "#CC0000", "#CC0066", "#001BCC", "#CCB400", "#000000"]);
@@ -59,7 +63,13 @@ Object.keys(cancionesPorDecada).forEach(decada => {
     const numero = reproducciones.replace(/[^0-9]/g, "");
     return escalaReproducciones(numero);
   }
+  
+
+
 </script>
+
+
+
 
 <head>
   <!-- Importa la fuente Raleway desde Google Fonts -->
@@ -80,6 +90,8 @@ Object.keys(cancionesPorDecada).forEach(decada => {
       tras
       <br>
     </h2>
+
+    
 
     <p>
 
@@ -153,8 +165,18 @@ Object.keys(cancionesPorDecada).forEach(decada => {
   <img src="images/onda2.gif" class="onda onda3" alt="Onda 3">
 
   </div>
-      
+  
  
+<select id="filtro"> 
+    <option value="all">Todas</option>
+    <option value="2020">2020</option>
+    <option value="2010">2010</option>
+    <option value="2000">2000</option>
+    <option value="1990">1990</option>
+    <option value="1980">1980s</option>
+  </select>
+   
+
 
     {#each decadas as decada}
       <CancionesPorDecada
@@ -167,6 +189,8 @@ Object.keys(cancionesPorDecada).forEach(decada => {
       />
     {/each}
 
+
+  
     <p>
       Cada canción se transforma en un círculo que late con su propia energía, mostrando su popularidad y estilo en un universo visual que invita a descubrir música con solo mirar.
       <br>
